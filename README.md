@@ -164,3 +164,5 @@ Os trabalhos serão avaliados através:
 - da utilização de testes de exceção e, por fim, 
 - das seqüências de _commits_ para os casos em que o emprego das técnicas de
   falsificação, duplicação e triangulação é obrigatório.
+
+  remove
