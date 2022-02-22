@@ -8,7 +8,7 @@ import app.CalculaBase;
 
 public class CalculaBaseTeste {
 	
-	private CalculaBase calcula;
+	CalculaBase calcula;
 	
 	@Before
 	public void setup() {
@@ -17,11 +17,20 @@ public class CalculaBaseTeste {
 	
 	@Test
 	public void testSubtracao() {
-		assertEquals(8000, calcula.subtracao(10000, 2000));
+		calcula.subtracao(10000f, 2000f);
+		assertEquals(8000f, calcula.getTotalBase(), 0f);
+	}
+	
+	@Test
+	public void testDuasSubtracao() {
+		calcula.subtracao(10000f, 2000f);
+		calcula.subtracao(9555f, 1555f);
+		assertEquals(8000f, calcula.getTotalBase(), 0f);
 	}
 	
 	@Test
 	public void testSubtracaoNegativa() {
-		assertEquals(0, calcula.subtracao(100, 200));
-	}
+		calcula.subtracao(100, 200);
+		assertEquals(0f, calcula.getTotalBase(), 0f);
+	}	
 }
