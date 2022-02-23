@@ -18,7 +18,8 @@ public class ImpostoTeste {
 
     @Test
     public void testeImposto() {
-        imposto.calculaImposto(2000f);
-        assertEquals(0f, imposto.getImposto(), 0f);
+        imposto.calculaImposto(1903.98);
+        assertEquals(0, imposto.getImposto(), 0.01);
     }
+    
 }
