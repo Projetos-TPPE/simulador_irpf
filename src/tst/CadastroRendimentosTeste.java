@@ -34,7 +34,7 @@ public class CadastroRendimentosTeste {
 	
 	@Parameters
 	public static Collection<Object[]> getParameters() {
-		// {{{Salario, valor}} , valorEsperado}
+		// {{{ valorSalario,}} , valorEsperado}
 		// {{
 		//   {Salario, valor},
 		//   {Aluguel, valor}}, valorEsperado}
