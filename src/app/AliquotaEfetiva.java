@@ -4,7 +4,7 @@ public class AliquotaEfetiva {
     private float porcantagemAliquotaEfetiva;
 
     public AliquotaEfetiva(float totalRendimentos, float imposto) {
-        this.porcantagemAliquotaEfetiva = 10;
+        this.porcantagemAliquotaEfetiva = (imposto*100)/totalRendimentos;
     }
 
     public float getAliquotaEfetiva() {
