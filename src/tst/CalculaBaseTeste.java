@@ -27,5 +27,11 @@ public class CalculaBaseTeste {
 		calcula.subtracao(10000f, 5000f);
 		assertEquals(5000f, calcula.getTotalBase(), 0f);
 	}
+	
+	@Test
+	public void testSubtracaoTrian() {
+		calcula.subtracao(12345f, 12000f);
+		assertEquals(345f, calcula.getTotalBase(), 0f);
+	}
 		
 }
