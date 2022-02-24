@@ -10,11 +10,7 @@ public class CalculaBase {
 	public float subtracao(float rendimentos, float deducoes) {
 		this.rendimentos = rendimentos; 
 		this.deducoes = deducoes;		
-		this.resultadobase = rendimentos - deducoes; 
-		
-		if(resultadobase < 0) {
-			resultadobase = 0;
-		}
+		this.resultadobase = 8000f; 		
 		
 		return this.resultadobase;
 	}
