@@ -2,17 +2,17 @@ package app;
 
 public class CalculaBase {
 	
-	private float rendimentos;
-	private float deducoes;
+	private float rendimentos = 0;
+	private float deducoes = 0;
 	private float resultadobase;
 	
 	
 	public float subtracao(float rendimentos, float deducoes) {
 		this.rendimentos = rendimentos; 
 		this.deducoes = deducoes;		
-		this.resultadobase = 8000f; 		
-		
-		return this.resultadobase;
+		this.resultadobase = rendimentos - deducoes; 		
+
+		return resultadobase;
 	}
 	
 	public float getTotalBase() {

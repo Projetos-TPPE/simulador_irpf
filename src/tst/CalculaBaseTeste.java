@@ -21,5 +21,11 @@ public class CalculaBaseTeste {
 		calcula.subtracao(10000f, 2000f);
 		assertEquals(8000f, calcula.getTotalBase(), 0f);
 	}
+	
+	@Test
+	public void testSubtracaoDupla() {
+		calcula.subtracao(10000f, 5000f);
+		assertEquals(5000f, calcula.getTotalBase(), 0f);
+	}
 		
 }
