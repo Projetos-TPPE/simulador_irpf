@@ -2,16 +2,16 @@ package app;
 
 public class Imposto {
     
-	private double impostoFinal;
+	private float impostoFinal;
 	
 
-    public double calculaImposto(double baseCalculo) {
+    public float calculaImposto(float baseCalculo) {
     	
-    	double impostoTotal = 0;
-    	double faixa1 = 1903.98;
-    	double faixa2 = 922.67;
-    	double faixa3 = 924.40;
-    	double faixa4 = 913.63;
+    	float impostoTotal = 0f;
+    	float faixa1 = 1903.98f;
+    	float faixa2 = 922.67f;
+    	float faixa3 = 924.40f;
+    	float faixa4 = 913.63f;
     	
     	if (baseCalculo <= faixa1) {            
          	impostoTotal += baseCalculo * 0;
@@ -59,7 +59,7 @@ public class Imposto {
 		return this.impostoFinal = impostoTotal;
     }
     
-    public double getImposto() {
+    public float getImposto() {
         return impostoFinal;
     }
 }
