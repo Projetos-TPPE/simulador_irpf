@@ -1,13 +1,14 @@
 package app;
 
 public class Rendimento {
-
-	private String descricao;
-	private float valorRendimento;
-
-	public Rendimento(String descricao, float valorRendimento) {
-		this.descricao = descricao; 
-		this.valorRendimento = valorRendimento;
+	
+	private float totalRendimentos;
+	
+	public void cadastrarRendimento(String descricao, float valorRendimento) {
+		this.totalRendimentos = valorRendimento;
 	}
 
+	public float getTotalRendimentos() {
+		return totalRendimentos;
+	}
 }
