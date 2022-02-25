@@ -5,13 +5,9 @@ public class Imposto {
 	private double impostoFinal;
 
     public double calculaImposto(double baseCalculo) {
-    	double impostoTotal = 0;
+    	double impostoTotal = baseCalculo * 0;
 
-        if (baseCalculo >= 1903.98) {            
-        	impostoTotal += 1903.98 * 0;          
-        }
-
-        return this.impostoFinal = impostoTotal;
+        return impostoTotal;
     }
     
     public double getImposto() {
