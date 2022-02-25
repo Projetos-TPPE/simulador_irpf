@@ -21,4 +21,12 @@ public class RendimentoTeste {
     	rendimento.cadastrarRendimento("Salario", 1000f);
         assertEquals(1000f, rendimento.getTotalRendimentos(), 0f);
     }
+    
+    @Test
+    public void testeRendimento2() {
+    	System.out.print(rendimento.getTotalRendimentos());
+    	rendimento.cadastrarRendimento("Salario", 1000f);
+    	rendimento.cadastrarRendimento("Salario", 2000f);
+        assertEquals(3000f, rendimento.getTotalRendimentos(), 0f);
+    }
 }
