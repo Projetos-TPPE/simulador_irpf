@@ -32,6 +32,30 @@ public class Imposto {
          	baseCalculo -= faixa2;
          }
          
+         if (baseCalculo > 0 && baseCalculo < faixa3) {
+         	impostoTotal += baseCalculo*0.15;
+         	baseCalculo -= faixa3;
+         }
+         
+         if (baseCalculo > faixa3) {
+         	impostoTotal += faixa3*0.15;
+         	baseCalculo -= faixa3;
+         }
+         
+         if (baseCalculo > 0 && baseCalculo < faixa4) {
+         	impostoTotal += baseCalculo*0.225;
+         	baseCalculo -= faixa4;
+         }
+         
+         if (baseCalculo > faixa4) {
+         	impostoTotal += faixa4*0.225;
+         	baseCalculo -= faixa4;
+         }
+         
+         if (baseCalculo > 0) {
+         	impostoTotal += baseCalculo*0.275;
+         }
+         
 		return this.impostoFinal = impostoTotal;
     }
     

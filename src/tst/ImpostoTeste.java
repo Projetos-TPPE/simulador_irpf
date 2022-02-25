@@ -28,4 +28,10 @@ public class ImpostoTeste {
         assertEquals(69.1515, imposto.getImposto(), 0.01);
     }
     
+    @Test
+    public void testeImpostoFaixa5() {
+        imposto.calculaImposto(10000);
+        assertEquals(1880.64, imposto.getImposto(), 0.01);
+    }
+    
 }
