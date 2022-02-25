@@ -3,7 +3,7 @@ package app;
 public class AliquotaEfetiva {
     private float porcantagemAliquotaEfetiva;
 
-    public AliquotaEfetiva(float totalRendimentos, float imposto) {
+    public void calculaAliquotaEfetiva(float totalRendimentos, float imposto) {
         this.porcantagemAliquotaEfetiva = (imposto*100)/totalRendimentos;
     }
 
