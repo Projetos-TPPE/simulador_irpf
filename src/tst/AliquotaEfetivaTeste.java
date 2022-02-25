@@ -6,7 +6,9 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
@@ -17,43 +19,47 @@ import app.AliquotaEfetiva;
 public class AliquotaEfetivaTeste {
     
     AliquotaEfetiva aliquota;
-    Object[][] parametros;
+    //Object[][] parametros;
+    float totalRendimentos;
+    float imposto;
     float valorEsperado;
-    
+    public Class<? extends Exception> expectedException;
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
     
     @Before
     public void setup() {
         aliquota = new AliquotaEfetiva();
     }
     
-    public AliquotaEfetivaTeste(Object[][] parametros, float valorEsperado) {
-        this.parametros = parametros;
+    
+    public AliquotaEfetivaTeste(float totalRendimentos, float imposto, float valorEsperado, Class<? extends Exception> exception) {
+        this.totalRendimentos = totalRendimentos;
+        this.imposto = imposto;
+        this.expectedException = exception;
         this.valorEsperado = valorEsperado;
     }
     
     @Parameters
     public static Collection<Object[]> getParamters(){
         Object[][] resultado = new Object[][] {
-            {new Object[][] {
-                {20000f, 2000f}
-            }, 10f},
-            {new Object[][] {
-                {40000f, 8000f}
-            }, 20f},
-            {new Object[][] {
-                {80000f, 24000f},
-            }, 30f},
+                {20000f, 2000f, 10f, null},
+                {40000f, 8000f, 20f, null},
+                {80000f, 24000f, 30f, null},
+                {0f, 40000f, 0f, ArithmeticException.class}
         };
         
         return Arrays.asList(resultado);
     }
     
     @Test
-    public void testAliquotaEfetiva() {
-        for (Object[] o : parametros) {
-            aliquota.calculaAliquotaEfetiva((float)o[0], (float)o[1]);
-            assertEquals(valorEsperado, aliquota.getAliquotaEfetiva(), 0f);
+    public void testAliquotaEfetiva() throws ArithmeticException, InterruptedException{
+    	if (expectedException != null) {
+    		
+            thrown.expect(expectedException);
         }
+            aliquota.calculaAliquotaEfetiva(totalRendimentos, imposto);
+            assertEquals(valorEsperado, aliquota.getAliquotaEfetiva(), 0f);
     }
 
     /*@Test
