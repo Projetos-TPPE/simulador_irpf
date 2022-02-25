@@ -8,7 +8,7 @@ public class Deducoes {
 	private String nome;
 	private String dataDeNascimento;
 	private int numDependentes;
-	private List<Dependente> dependentes;
+	private String[] dependentes;
 	private float[] pensaoAlimento;
 	private float[] previdenciaOficial;
 	private String[] descricaoPrevidenciaOficial;
@@ -18,7 +18,7 @@ public class Deducoes {
 	
 	public Deducoes() {
 		totalValorDeducoes = 0;
-		dependentes = new LinkedList<Dependente>();
+		dependentes = new String[0];
 		previdenciaOficial = new float[0];
 		descricaoPrevidenciaOficial = new String[0];
 		descricaoOutrasDeducoes = new String[0];
@@ -45,10 +45,13 @@ public class Deducoes {
 	
 	public void cadastrarDependente(String nome, String dataDeNascimento) {
 		
-		if(nome == null) {
-			throw new IllegalArgumentException("Insira o nome do dependete que deseja cadastrar");
+		if(nome == "") {
+			throw new IllegalArgumentException("O nome do dependete não pode ser vazio");
+		}else if (nome == null) {
+			throw new IllegalArgumentException("O nome do dependete retornou null");
 		}
 		this.numDependentes++;
+		System.out.println(nome);
 	}
 	
 	public void cadastrarPensaoAlimenticia(float valor) {
