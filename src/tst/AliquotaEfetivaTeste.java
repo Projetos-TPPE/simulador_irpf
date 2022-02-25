@@ -19,6 +19,7 @@ public class AliquotaEfetivaTeste {
         AliquotaEfetiva aliquota = new AliquotaEfetiva(40000f, 8000f);
         assertEquals(20f, aliquota.getAliquotaEfetiva(), 0f);
     }
+    
     @Test
     public void testeAliquotaEfetiva3() {
         AliquotaEfetiva aliquota = new AliquotaEfetiva(80000f, 24000f);
