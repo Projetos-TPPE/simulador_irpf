@@ -70,7 +70,9 @@ TPPE - Técnicas de Programação para Plataformas Emergentes
 
 [Triangulação Aliquota Efetiva](https://github.com/Projetos-TPPE/simulador_irpf/commit/fded861e5a53c94ceee44418d99ff8a573b55142);
 
-[Parametrização Aliquota Efetiva](https://github.com/Projetos-TPPE/simulador_irpf/commit/f3f3e0c64dcbbfb4dbfc3d4b37d32778369d854e).
+[Parametrização Aliquota Efetiva](https://github.com/Projetos-TPPE/simulador_irpf/commit/f3f3e0c64dcbbfb4dbfc3d4b37d32778369d854e);
+
+[Exceções](https://github.com/Projetos-TPPE/simulador_irpf/commit/a37cd7925b347528a17ecf753986c874c84db826).
 
 ---
 
