@@ -7,45 +7,50 @@ TPPE - Técnicas de Programação para Plataformas Emergentes
 ---
 ## Entrega
 
-### Commits Calculo da Base
-
-[Falsificação CalculaBase](https://github.com/Projetos-TPPE/simulador_irpf/commit/6a8fd35812b58133a0f1b9014c30cf78718a003c)
-
-[Duplicação CalculaBase](https://github.com/Projetos-TPPE/simulador_irpf/commit/3be64c49c69c665c5a138c900cf297d918ca3c57)
-
-[Triangulação CalculaBase](https://github.com/Projetos-TPPE/simulador_irpf/commit/f2e6dab1fc67975f5be28ef302a12cba5c7cfe04)
-
-[Parametrização CalculaBase](https://github.com/Projetos-TPPE/simulador_irpf/commit/6552b910d443521ccb9354bab0c605bc1bc5a1e1)
-
-### Commits Alíquota
-
-[Falsificação Aliquota Efetiva](https://github.com/Projetos-TPPE/simulador_irpf/commit/e0876c44a105a7f94829c2f42ed907a284316c62)
-
-[Duplicação Aliquota Efetiva](https://github.com/Projetos-TPPE/simulador_irpf/commit/934877fd3242dd7c6b3b10515f5277ba318ad377)
-
-[Triangulação Aliquota Efetiva](https://github.com/Projetos-TPPE/simulador_irpf/commit/fded861e5a53c94ceee44418d99ff8a573b55142)
-
-[Parametrização Aliquota Efetiva](https://github.com/Projetos-TPPE/simulador_irpf/commit/f3f3e0c64dcbbfb4dbfc3d4b37d32778369d854e)
-
 ### Commits Rendimentos
 
-[Falsificação Rendimentos](https://github.com/Projetos-TPPE/simulador_irpf/commit/02a12d3d0b5e955a3ce7fa589cdf5c4672cbcf85)
+[Falsificação Rendimentos](https://github.com/Projetos-TPPE/simulador_irpf/commit/02a12d3d0b5e955a3ce7fa589cdf5c4672cbcf85);
 
-[Duplicação Rendimentos](https://github.com/Projetos-TPPE/simulador_irpf/commit/0e41de46d8056a0d714eb7e78bbabf68d1c081fb)
+[Duplicação Rendimentos](https://github.com/Projetos-TPPE/simulador_irpf/commit/0e41de46d8056a0d714eb7e78bbabf68d1c081fb);
 
-[Triangulação Rendimentos](https://github.com/Projetos-TPPE/simulador_irpf/commit/5f1597512185fc6e82fdc67dc7a6c011eecfb348)
+[Triangulação Rendimentos](https://github.com/Projetos-TPPE/simulador_irpf/commit/5f1597512185fc6e82fdc67dc7a6c011eecfb348);
 
-[Falsificação Rendimetnos](https://github.com/Projetos-TPPE/simulador_irpf/commit/5f1597512185fc6e82fdc67dc7a6c011eecfb348)
+[Falsificação Rendimetnos](https://github.com/Projetos-TPPE/simulador_irpf/commit/5f1597512185fc6e82fdc67dc7a6c011eecfb348);
+
+[Exceções](https://github.com/Projetos-TPPE/simulador_irpf/commit/e37bc73e9be62a73ff5dfcc005ae714907d9414c).
+
 
 ### Commits Deduções
 
-[Falsificação deduções](https://github.com/Projetos-TPPE/simulador_irpf/commit/e0876c44a105a7f94829c2f42ed907a284316c62)
+[Falsificação deduções](https://github.com/Projetos-TPPE/simulador_irpf/commit/e0876c44a105a7f94829c2f42ed907a284316c62);
 
-[Duplicação Deduções](https://github.com/Projetos-TPPE/simulador_irpf/commit/f302be1b70c824423dca5aa2df33c3b38f01745b)
+[Duplicação Deduções](https://github.com/Projetos-TPPE/simulador_irpf/commit/f302be1b70c824423dca5aa2df33c3b38f01745b);
 
-[Triangulação Deduções](https://github.com/Projetos-TPPE/simulador_irpf/blob/dev/src/tst/DeducoesTeste.java) (Por um erro de commit o código da triangulação aparece comentada no intervalo das linhas 177-187).
+[Triangulação Deduções](https://github.com/Projetos-TPPE/simulador_irpf/blob/dev/src/tst/DeducoesTeste.java) (Por um erro de commit o código da triangulação aparece comentada no intervalo das linhas 177-187);
 
-[Parametrização Deduções](https://github.com/Projetos-TPPE/simulador_irpf/commit/4939ea70082f1b3d8aaacc30de32569725d7331a#)
+[Parametrização Deduções](https://github.com/Projetos-TPPE/simulador_irpf/commit/4939ea70082f1b3d8aaacc30de32569725d7331a#);
+
+[Exceções](https://github.com/Projetos-TPPE/simulador_irpf/commit/27dc21a52107fc716a18878bbae761249134752a).
+
+### Commits Calculo da Base
+
+[Falsificação CalculaBase](https://github.com/Projetos-TPPE/simulador_irpf/commit/6a8fd35812b58133a0f1b9014c30cf78718a003c);
+
+[Duplicação CalculaBase](https://github.com/Projetos-TPPE/simulador_irpf/commit/3be64c49c69c665c5a138c900cf297d918ca3c57);
+
+[Triangulação CalculaBase](https://github.com/Projetos-TPPE/simulador_irpf/commit/f2e6dab1fc67975f5be28ef302a12cba5c7cfe04);
+
+[Parametrização CalculaBase](https://github.com/Projetos-TPPE/simulador_irpf/commit/6552b910d443521ccb9354bab0c605bc1bc5a1e1).
+
+### Commits Alíquota
+
+[Falsificação Aliquota Efetiva](https://github.com/Projetos-TPPE/simulador_irpf/commit/e0876c44a105a7f94829c2f42ed907a284316c62);
+
+[Duplicação Aliquota Efetiva](https://github.com/Projetos-TPPE/simulador_irpf/commit/934877fd3242dd7c6b3b10515f5277ba318ad377);
+
+[Triangulação Aliquota Efetiva](https://github.com/Projetos-TPPE/simulador_irpf/commit/fded861e5a53c94ceee44418d99ff8a573b55142);
+
+[Parametrização Aliquota Efetiva](https://github.com/Projetos-TPPE/simulador_irpf/commit/f3f3e0c64dcbbfb4dbfc3d4b37d32778369d854e).
 
 ---
 
