@@ -28,6 +28,15 @@ public class Deducoes {
 	}
 	
 	public void cadastrarPrevidenciaOficial(String descricaoPrevidenciaOficial, float valor) {
+		
+		if(descricaoPrevidenciaOficial == "" || descricaoPrevidenciaOficial == null) {
+			throw new DescricaoEmBrancoException("A descrição não pode ser vazia");
+		}
+		
+		if(valor < 0) {
+			throw new ValorDeducaoInvalidoException("O valor tem que ser maior ou igual a zero");
+		}
+		
 		float tempValor[] = new float[previdenciaOficial.length + 1]; 
 		String tempDescricao[] = new String[descricaoPrevidenciaOficial.length() + 1];
 		
@@ -45,15 +54,19 @@ public class Deducoes {
 	
 	public void cadastrarDependente(String nome, String dataDeNascimento) {
 		
-		if(nome == "") {
-			throw new IllegalArgumentException("O nome do dependete não pode ser vazio");
-		}else if (nome == null) {
-			throw new IllegalArgumentException("O nome do dependete retornou null");
+		if(nome == "" || nome == null) {
+			throw new DescricaoEmBrancoException("O nome do dependente não pode ser vazio");
 		}
 		this.numDependentes++;
 	}
 	
 	public void cadastrarPensaoAlimenticia(float valor) {
+		
+		if(valor < 0) {
+			throw new ValorPensaoInvalidoException("O valor tem que ser maior ou igual a zero");
+		}
+		
+		
 		float auxPensao[] = new float[pensaoAlimento.length + 1];
 		
 		for (int i=0; i<pensaoAlimento.length; i++) {
@@ -76,6 +89,14 @@ public class Deducoes {
 	
 	
 	public void cadastrarOutrasDeducoes(String descricaoOutrasDeducoes, float valor) {
+		if(descricaoOutrasDeducoes == "" || descricaoOutrasDeducoes == null) {
+			throw new DescricaoEmBrancoException("A descrição não pode ser vazia");
+		}
+		
+		if(valor < 0) {
+			throw new ValorDeducaoInvalidoException("O valor tem que ser maior ou igual a zero");
+		}
+		
 		float tempValor[] = new float[outrasDeducoesValor.length + 1];
 		String tempDescricao[] = new String[descricaoOutrasDeducoes.length() + 1];
 		
