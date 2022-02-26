@@ -51,7 +51,6 @@ public class Deducoes {
 			throw new IllegalArgumentException("O nome do dependete retornou null");
 		}
 		this.numDependentes++;
-		System.out.println(nome);
 	}
 	
 	public void cadastrarPensaoAlimenticia(float valor) {
