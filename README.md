@@ -15,14 +15,14 @@ TPPE - Técnicas de Programação para Plataformas Emergentes
 
 [Triangulação Rendimentos](https://github.com/Projetos-TPPE/simulador_irpf/commit/5f1597512185fc6e82fdc67dc7a6c011eecfb348);
 
-[Falsificação Rendimetnos](https://github.com/Projetos-TPPE/simulador_irpf/commit/5f1597512185fc6e82fdc67dc7a6c011eecfb348);
+[Falsificação Rendimetnos](https://github.com/Projetos-TPPE/simulador_irpf/commit/1c3d8d426c6abd6e07b389b938ec712d7a8d04c9);
 
 [Exceções](https://github.com/Projetos-TPPE/simulador_irpf/commit/e37bc73e9be62a73ff5dfcc005ae714907d9414c).
 
 
 ### Commits Deduções
 
-[Falsificação deduções](https://github.com/Projetos-TPPE/simulador_irpf/commit/e0876c44a105a7f94829c2f42ed907a284316c62);
+[Falsificação Deduções](https://github.com/Projetos-TPPE/simulador_irpf/commit/e0876c44a105a7f94829c2f42ed907a284316c62);
 
 [Duplicação Deduções](https://github.com/Projetos-TPPE/simulador_irpf/commit/f302be1b70c824423dca5aa2df33c3b38f01745b);
 
@@ -41,6 +41,16 @@ TPPE - Técnicas de Programação para Plataformas Emergentes
 [Triangulação CalculaBase](https://github.com/Projetos-TPPE/simulador_irpf/commit/f2e6dab1fc67975f5be28ef302a12cba5c7cfe04);
 
 [Parametrização CalculaBase](https://github.com/Projetos-TPPE/simulador_irpf/commit/6552b910d443521ccb9354bab0c605bc1bc5a1e1).
+
+### Imposto
+
+[Falsificação Imposto](https://github.com/Projetos-TPPE/simulador_irpf/commit/23668b1af92fbd649497a39a377a603d765b16b3);
+
+[Duplicação Imposto](https://github.com/Projetos-TPPE/simulador_irpf/commit/e65ced5fa9cd1f9d54e768386267cae0d8c93);
+
+[Triangulação Imposto](https://github.com/Projetos-TPPE/simulador_irpf/commit/dd3f6e9c80b3fff1abe8eec81270e01fb8fdd3fa);
+
+[Parametrização Imposto](https://github.com/Projetos-TPPE/simulador_irpf/commit/242b3a2ea0953ff814d07c7197f1d3de02194e64).
 
 ### Commits Alíquota
 
