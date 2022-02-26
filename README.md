@@ -2,9 +2,19 @@ UnB - Universidade de Brasilia
 FGA - Faculdade do Gama  
 TPPE - Técnicas de Programação para Plataformas Emergentes  
 
-### Trabalho Prático 1 - _Test-Driven Development_
+| Nome | Matrícula |
+| - | - |
+| Bruno Alves Félix | 16/0114705 |
+| Eliseu Kadesh     | 18/0015834 |
+| Hugo Aragão de Oliveira| 16/0124581 |
+| Edson Soares | 19/0105381 |
+| Francisco Emanoel Ferreira da Penha | 170142329 |
+| Enzo Gabriel Guedes Queiroz Saraiva | 16/0119006 |
 
 ---
+
+# Trabalho Prático 1 - _Test-Driven Development_
+
 ## Entrega
 
 ### Commits Rendimentos
@@ -194,15 +204,6 @@ exceções.
 Os trabalhos deverão ser executados por grupos de até 6 alunos. O grupo deverá
 criar um repositório público no GitHub, cujo arquivo README.md deverá conter os
 nomes e matrículas dos componentes.
-
-| Nome | Matrícula |
-| - | - |
-| Bruno Alves Félix | 16/0114705 |
-| Eliseu Kadesh     | 18/0015834 |
-| Hugo Aragão de Oliveira| 16/0124581 |
-| Edson Soares | 19/0105381 |
-| Francisco Emanoel Ferreira da Penha | 170142329 |
-| Enzo Gabriel Guedes Queiroz Saraiva | 16/0119006 |
 
 **Entrega do trabalho:**
 
