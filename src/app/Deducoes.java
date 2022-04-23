@@ -1,7 +1,9 @@
 package app;
 
+import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ArrayList;
 
 public class Deducoes {
 	private float totalValorDeducoes;
@@ -10,8 +12,8 @@ public class Deducoes {
 	private int numDependentes;
 	private String[] dependentes;
 	private float[] pensaoAlimento;
-	private float[] previdenciaOficial;
-	private String[] descricaoPrevidenciaOficial;
+	private ArrayList<Float> previdenciaOficial;
+	private ArrayList<String> descricaoPrevidenciaOficial;
 	private String[] descricaoOutrasDeducoes;
 	private float[] outrasDeducoesValor;
 	
@@ -19,8 +21,8 @@ public class Deducoes {
 	public Deducoes() {
 		totalValorDeducoes = 0;
 		dependentes = new String[0];
-		previdenciaOficial = new float[0];
-		descricaoPrevidenciaOficial = new String[0];
+		previdenciaOficial = new ArrayList<Float>(0);
+		descricaoPrevidenciaOficial = new ArrayList<String>(0);
 		descricaoOutrasDeducoes = new String[0];
 		numDependentes = 0;
 		outrasDeducoesValor = new float[0];
@@ -29,27 +31,32 @@ public class Deducoes {
 	
 	public void cadastrarPrevidenciaOficial(String descricaoPrevidenciaOficial, float valor) {
 		
-		if(descricaoPrevidenciaOficial == "" || descricaoPrevidenciaOficial == null) {
-			throw new DescricaoEmBrancoException("A descrição não pode ser vazia");
-		}
+		verificaDescricaoBranco(descricaoPrevidenciaOficial);
 		
-		if(valor < 0) {
+		verificaValorDeducaoValido(valor);
+		
+		setPrevidenciaOficial(valor);
+		setDrecricaoPrevidenciaOficial(descricaoPrevidenciaOficial);
+	}
+
+	private void setDrecricaoPrevidenciaOficial(String descricaoPrevidenciaOficial) {
+		this.descricaoPrevidenciaOficial.add(descricaoPrevidenciaOficial);
+	}
+
+	private void setPrevidenciaOficial(float valor) {
+		this.previdenciaOficial.add(valor);
+	}
+
+	private void verificaValorDeducaoValido(float valor) {
+		if(valor <= 0) {
 			throw new ValorDeducaoInvalidoException("O valor tem que ser maior ou igual a zero");
 		}
-		
-		float tempValor[] = new float[previdenciaOficial.length + 1]; 
-		String tempDescricao[] = new String[descricaoPrevidenciaOficial.length() + 1];
-		
-		for (int i=0; i<previdenciaOficial.length; i++) {
-			tempValor[i] = this.previdenciaOficial[i];
-			tempDescricao[i] = this.descricaoPrevidenciaOficial[i];
+	}
+
+	private void verificaDescricaoBranco(String descricaoPrevidenciaOficial) {
+		if(descricaoPrevidenciaOficial == "" || descricaoPrevidenciaOficial == null) {
+			throw new DescricaoEmBrancoException("A descricao nao pode ser vazia");
 		}
-		
-		tempValor[previdenciaOficial.length] = valor; 
-		tempDescricao[previdenciaOficial.length] = descricaoPrevidenciaOficial;
-		
-		this.previdenciaOficial = tempValor;
-		this.descricaoPrevidenciaOficial = tempDescricao;
 	}
 	
 	public void cadastrarDependente(String nome, String dataDeNascimento) {
@@ -93,9 +100,7 @@ public class Deducoes {
 			throw new DescricaoEmBrancoException("A descrição não pode ser vazia");
 		}
 		
-		if(valor < 0) {
-			throw new ValorDeducaoInvalidoException("O valor tem que ser maior ou igual a zero");
-		}
+		verificaValorDeducaoValido(valor);
 		
 		float tempValor[] = new float[outrasDeducoesValor.length + 1];
 		String tempDescricao[] = new String[descricaoOutrasDeducoes.length() + 1];
