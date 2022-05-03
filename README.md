@@ -4,7 +4,7 @@
 
 ---
 
-#### Entrega: [Aprimoramento](https://github.com/Projetos-TPPE/simulador_irpf/blob/tp3/tp3/Aprimoramento%20tp3.md)
+### Entrega: [Aprimoramento](https://github.com/Projetos-TPPE/simulador_irpf/blob/tp3/tp3/Aprimoramento%20tp3.md)
 
 ---
 Qualidade do projeto de código -- um breve resumo: 
