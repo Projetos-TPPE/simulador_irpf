@@ -1,229 +1,91 @@
-UnB - Universidade de Brasilia  
-FGA - Faculdade do Gama  
-TPPE - Técnicas de Programação para Plataformas Emergentes  
-
-| Nome | Matrícula |
-| - | - |
-| Bruno Alves Félix | 16/0114705 |
-| Eliseu Kadesh     | 18/0015834 |
-| Hugo Aragão de Oliveira| 16/0124581 |
-| Edson Soares | 19/0105381 |
-| Francisco Emanoel Ferreira da Penha | 170142329 |
-| Enzo Gabriel Guedes Queiroz Saraiva | 16/0119006 |
+### UnB - Universidade de Brasilia 
+### FGA - Faculdade do Gama
+### TPPE - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-# Trabalho Prático 1 - _Test-Driven Development_
-
-## Entrega
-
-### Commits Rendimentos
-
-[Falsificação Rendimentos](https://github.com/Projetos-TPPE/simulador_irpf/commit/02a12d3d0b5e955a3ce7fa589cdf5c4672cbcf85);
-
-[Duplicação Rendimentos](https://github.com/Projetos-TPPE/simulador_irpf/commit/0e41de46d8056a0d714eb7e78bbabf68d1c081fb);
-
-[Triangulação Rendimentos](https://github.com/Projetos-TPPE/simulador_irpf/commit/5f1597512185fc6e82fdc67dc7a6c011eecfb348);
-
-[Falsificação Rendimetnos](https://github.com/Projetos-TPPE/simulador_irpf/commit/1c3d8d426c6abd6e07b389b938ec712d7a8d04c9);
-
-[Exceções](https://github.com/Projetos-TPPE/simulador_irpf/commit/e37bc73e9be62a73ff5dfcc005ae714907d9414c).
-
-
-### Commits Deduções
-
-[Falsificação Deduções](https://github.com/Projetos-TPPE/simulador_irpf/commit/e0876c44a105a7f94829c2f42ed907a284316c62);
-
-[Duplicação Deduções](https://github.com/Projetos-TPPE/simulador_irpf/commit/f302be1b70c824423dca5aa2df33c3b38f01745b);
-
-[Triangulação Deduções](https://github.com/Projetos-TPPE/simulador_irpf/blob/dev/src/tst/DeducoesTeste.java) (Por um erro de commit o código da triangulação aparece comentada no intervalo das linhas 177-187);
-
-[Parametrização Deduções](https://github.com/Projetos-TPPE/simulador_irpf/commit/4939ea70082f1b3d8aaacc30de32569725d7331a#);
-
-[Exceções](https://github.com/Projetos-TPPE/simulador_irpf/commit/27dc21a52107fc716a18878bbae761249134752a).
-
-### Commits Calculo da Base
-
-[Falsificação CalculaBase](https://github.com/Projetos-TPPE/simulador_irpf/commit/6a8fd35812b58133a0f1b9014c30cf78718a003c);
-
-[Duplicação CalculaBase](https://github.com/Projetos-TPPE/simulador_irpf/commit/3be64c49c69c665c5a138c900cf297d918ca3c57);
-
-[Triangulação CalculaBase](https://github.com/Projetos-TPPE/simulador_irpf/commit/f2e6dab1fc67975f5be28ef302a12cba5c7cfe04);
-
-[Parametrização CalculaBase](https://github.com/Projetos-TPPE/simulador_irpf/commit/6552b910d443521ccb9354bab0c605bc1bc5a1e1).
-
-### Imposto
-
-[Falsificação Imposto](https://github.com/Projetos-TPPE/simulador_irpf/commit/23668b1af92fbd649497a39a377a603d765b16b3);
-
-[Duplicação Imposto](https://github.com/Projetos-TPPE/simulador_irpf/commit/e65ced5fa9cd1f9d54e768386267cae0d8c93);
-
-[Triangulação Imposto](https://github.com/Projetos-TPPE/simulador_irpf/commit/dd3f6e9c80b3fff1abe8eec81270e01fb8fdd3fa);
-
-[Parametrização Imposto](https://github.com/Projetos-TPPE/simulador_irpf/commit/242b3a2ea0953ff814d07c7197f1d3de02194e64).
-
-### Commits Alíquota
-
-[Falsificação Aliquota Efetiva](https://github.com/Projetos-TPPE/simulador_irpf/commit/e0876c44a105a7f94829c2f42ed907a284316c62);
-
-[Duplicação Aliquota Efetiva](https://github.com/Projetos-TPPE/simulador_irpf/commit/934877fd3242dd7c6b3b10515f5277ba318ad377);
-
-[Triangulação Aliquota Efetiva](https://github.com/Projetos-TPPE/simulador_irpf/commit/fded861e5a53c94ceee44418d99ff8a573b55142);
-
-[Parametrização Aliquota Efetiva](https://github.com/Projetos-TPPE/simulador_irpf/commit/f3f3e0c64dcbbfb4dbfc3d4b37d32778369d854e);
-
-[Exceções](https://github.com/Projetos-TPPE/simulador_irpf/commit/a37cd7925b347528a17ecf753986c874c84db826).
+#### Entrega: [Aprimoramento](https://github.com/Projetos-TPPE/simulador_irpf/tree/tp3/tp3)
 
 ---
+Qualidade do projeto de código -- um breve resumo: 
 
-**Enunciado do trabalho** 
+Projeto de software não é simplesmente uma especificação feita antes da
+atividade de codificação e que posteriormente deve ser seguida à risca. A
+construção do código é também vista como uma atividade de projeto. Não há uma
+atividade de projeto, não há um time de projetistas: são os programadores quem
+constantemente refinam e estendem o projeto ao refinar e estender o código. Caso
+especial: TDD é uma técnica que realiza verificações de projetos antes mesmo do
+código ter sido escrito. 
 
-Seja o seguinte cenário descrito a seguir:
+Elementos que são projetados por nós, em diferentes níveis: 
+- Arquitetura de sistema: projetamos o sistema como um todo, identificamos os
+  principais subsistemas e como é realizada a comunicação entre eles. Esse
+projeto tem alto impacto em atributos de qualidade como desempenho e baixo
+impacto em linhas de código. 
 
-> De um modo bastante resumido, o Imposto de Renda de Pessoa Física (IRPF) de
-> todo contribuinte é calculado mensalmente considerando os rendimentos
-> tributáveis recebidos no mês corrente e as deduções legais. Da subtração
-> desses valores (rendimentos - deduções) obtem-se a *base de cálculo*, sobre o
-> qual será calculado o valor do imposto. Há 5 faixas de cálculo de imposto,
-> cada qual com sua alíquota (definida em \%) a ser aplicada sobre o valor que a
-> base de cálculo ocupou da faixa. O valor do imposto final é a soma dos valores
-> de impostos a serem pagos para cada faixa e a alíquota efetiva total (em \%) é
-> o resultado do valor do imposto dividido pela base de cálculo. Cada um desses
-> passos está detalhado a seguir.
->
-> Como rendimentos tributáveis entende-se todos aqueles valores recebidos pelo
-> contribuinte tais como salários, aluguéis, participação em lucros e
-> rendimentos de empresas, dividendos, lucros de aplicações financeiras, dentre
-> outros. O valor total desses rendimentos deve ser utilizado para efeitos do
-> cálculo do IRPF. 
->
-> O contribuinte tem direito legal a vários deduções no mês corrente. Como
-> deduções integrais entende-se aquelas cujos valores totais serão abatidos do
-> valor total de dividendos. São exemplos de deduções integrais: 
-> * Contribuição previdenciária oficial (podendo ser mais de uma contribuição,
->   por exemplo, no contracheque + contribuição via carnê INSS);
-> * Pensão alimentícia;
-> * Previdência privada ou Fundo de Previdência dos Servidores públicos
->   (Funpresp); 
-> * Valores pagos via carnê-leão, dentre outros.  
->
-> O contribuinte poderá ainda deduzir para cada dependente legal o valor de
-> R$189,59 por mês.  
-> Todas essas deduções deverão ser somadas para efeitos de cálculo do total de
-> deduções a que o contribuinte tem direito.  
-> 
-> A base de cálculo do IRPF é dada pela subtração do total de rendimentos pelo
-> total de deduções. 
-> 
-> Para o valor da base de cálculo, é calculado o valor de cada uma das 5 faixas
-> de imposto. As faixas possuem as seguintes alíquotas:   
-> 
-> | Faixa | Alíquota    |
-> |:-----:|:-----------:|
-> | 1a.   | 0% (isenta) |
-> | 2a.   | 7,5%        |
-> | 3a.   | 15%         |
-> | 4a.   | 22,5%       |
-> | 5a.   | 25%         |
-> 
-> Portanto, baseado na tabela acima, os valores da base de cálculo que atingiram
-> as faixas serão multiplicados pelas respectivas alíquotas para cálculo do
-> valor do imposto de cada uma das faixas. O valor total do imposto a ser pago
-> naquele mês é a soma dos valores dos impostos de todas as faixas. 
-> 
-> Por fim, a alíquota efetiva é calculada como sendo a taxa (%) do valor total
-> do imposto pelo valor da base de cálculo. 
->
-> Todo esses cálculos podem ser realizados através do [Simulador de IRPF da
-> Receita Federal Brasileira (RFB)](https://www27.receita.fazenda.gov.br/simulador-irpf/). 
+- Módulos e Componentes: cada subsistema é decomposto em módulos menores e mais
+  compreensíveis e, a depender da linguagem/framework utilizado, são compostos
+de pacotes (Java), namespace, bibliotecas reutilizáveis, hierarquias de classes,
+etc... Para tais módulos geralmente são publicadas interfaces que posteriormente
+são difíceis de serem alteradas (Refactoring de interfaces publicadas é sempre
+mais complicado de se realizar comparado a interfaces públicas).
+
+- Classes e tipos de dados: cada módulo, por sua vez, é decomposto em classes e
+  tipos de dados. Nesse estágio o projeto tende a ser mais informal e mais fácil
+de ser alterado (principalmente por meio de refatorações, em que o comportamento
+externamente observável do código é preservado - ou pelo menos deveria ser).
+Nesse nível realiza-se micro-projetos em tempo de programação. 
+
+- Funções: menor nível de projeto, mas ainda assim é realizada atividade de
+  projeto. Funções devem ser cuidadosamente projetadas pois terão impacto no
+sistema. Uma vez criadas, deve-se definir como tais funções funcionam
+internamente.
 
 
-Com base na descrição do cálculo do IRPF acima, o trabalho a ser realizado pelo
-grupo consiste na criação de um simulador similar ao simulador disponibilizado
-pela RFB. Esse simulador deverá ser construído através do método de TDD
-utilizando, **obrigatoriamente**, as técnicas de falsificação, duplicação e
-triangulação de testes. 
+O desafio é criar um bom projeto que seja mais fácil de ser modificado, de ser
+entendido, de ser consertado, mais resiliente a mudanças (acomoda futuras
+extensões e modificações) e menos suscetíveis a erros. 
 
-O projeto resultante do desenvolvimento através de TDD deverá ser capaz de:  
+Não há projeto errado e projeto certo, há mau e bom projeto. Bons projetos
+possuem as seguintes características: 
+* Simplicidade;
+* Elegância;
+* Modularidade (baixo acoplamento e alta coesão);
+* Boas interfaces; 
+* Extensibilidade;
+* Ausência de duplicidades; 
+* Portabilidade;
+* "Idiomático" (idioma da linguagem) e,
+* Boa documentação. 
 
-* Cadastro de rendimentos: 
-  * Cadastrar rendimentos com a descrição (salario, aluguel, etc...) e valor
-  * Não permitir descrição em branco (nesse caso lançar uma exceção do tipo
-    ```DescricaoEmBrancoException```
-  * Não permitir informar valores de rendimentos em branco ou inválidos
-    (negativos por exemplo). Nesses casos lançar exceção do tipo
-```ValorRendimentoInvalidoException``` 
+Fonte: _Code Craft : The Practice of Writing Excellent Code_, No Starch Press,
+Incorporated, 2006. _ProQuest Ebook Central_,
+https://ebookcentral.proquest.com/lib/univbrasilia-ebooks/detail.action?docID=273481.
 
-* Cadastro de deduções: 
-  * Cadastrar deduções através de sua descrição (Previdencia privada, Funpresp,
-    etc...) e valor: 
-    * Não permitir cadastro de deduções com descrição em branco. Nesse caso
-      lançar ```DescricaoEmBrancoException```.
-    * Não permitir cadastro de valores em branco ou inválidos para as deduções.
-      Nesses casos lançar uma exceção do tipo ```ValorDeducaoInvalidoException``` 
-  * Cadastrar uma ou mais contribuição previdenciária oficial, informando
-    descrição e valores. 
-    * As restrições apresentadas no caso acima se aplicam integralmente para
-      contribuições previdenciárias.
-  * Cadastrar uma ou mais pensão alimentícia, informando valores. 
-    * As restrições apresentadas no caso acima se aplicam integralmente para
-      contribuições previdenciárias.
-  * Cadastrar dependentes (zero ou mais), informando o nome e a data de
-    nascimento de cada dependente. 
-    * Não permitir o cadastro de um dependente com o nome em branco. Nesse caso
-      deverá lançar uma exceção do tipo ```NomeEmBrancoException```.
+#### Enunciado:
 
-* Calculo dos impostos das faixas de impostos: 
-  * Calcular o valor de faixa de base de cálculo de cada uma das faixas e o
-    valor do imposto para cada uma das faixas. 
-  * Calcular o valor total das faixas de base de cálculo e o valor total do
-    imposto de todas as faixas. 
+As características de um bom projeto de software apresentadas acima estão, de
+certo modo, associadas aos maus-cheiros de código apresentados por Martin Fowler
+em seu catálogo de refatorações e relacionados às operações que tratam tais
+maus-cheiros. De acordo com a definição do próprio Martin Fowler, refatoração é
+uma maneira de **aperfeiçoar o projeto de código existente sem alterar o seu
+comportamento externamente observável**. 
 
-* Calcular a alíquota efetiva. 
+Para esse trabalho o grupo deverá escolher 5 características dentre as 9
+características de um bom projeto de software apresentadas acima e, para cada
+uma delas, apresentar:
+* uma descrição da característica, mostrando claramente quais são os seus
+    efeitos no código (em termo de estrutura, claridade, coesão, acoplamento
+    dentre outros efeitos aplicáveis);
+* uma relação da característica com os maus-cheiros de código definidos por
+    Fowler. Uma descrição dos maus cheiros está disponível nos [slides sobre o
+    conteúdo de refatoração](https://docs.google.com/presentation/d/1BG1DVjtOZeG-j3Fmj1cY1gz-4AW9FphX/edit?usp=sharing&ouid=112746484255766107555&rtpof=true&sd=true);
+* pelo menos uma operação de refatoração capaz de levar o projeto de código a
+    ter a característica em análise. 
 
 
-O trabalho deverá apresentar o emprego das três técnicas de TDD (falsificação,
-duplicação e triangulação) em, pelo menos, nas três seguintes situações: 
+Valor do trabalho: 25 pontos, 0.5 ponto cada característica. 
 
-* Calculo do total de deduções; 
-* Cálculos da base de calculo e do valor de imposto da faixa 1; 
-* Cálculo da aliquota efetiva. 
+Prazo de entrega: 02 de maio de 2022, 23:59:59hs. Entrega através do repositório
+do grupo de alunos. 
 
-Nesses três casos deverá, para efeito de evidência, ter a seguinte sequencia de
-_commits_:
-* falsificação; 
-* duplicação; 
-* triangulação.
-
-:exclamation::exclamation::exclamation:**ATENÇÃO:** todos os testes finais
-deverão estar triangulados por parametrização, com exceção dos testes de
-exceções.
-
----
-
-**Grupos de alunos**
-
-Os trabalhos deverão ser executados por grupos de até 6 alunos. O grupo deverá
-criar um repositório público no GitHub, cujo arquivo README.md deverá conter os
-nomes e matrículas dos componentes.
-
-**Entrega do trabalho:**
-
-Os trabalhos deverão ser entregues através de repositório no GitHub, até as
-23:59:59hs do dia 25 de fevereiro de 2022, impreterivelmente.
-
-**Valor do trabalho**
-
-30 pontos.
-
-**Forma de avaliação**
-
-Os trabalhos serão avaliados através:
-
-- da corretude dos cálculos realizados pelo simulador;
-- da utilização de testes parametrizados em todos os testes funcionais; 
-- da utilização de testes de exceção e, por fim, 
-- das seqüências de _commits_ para os casos em que o emprego das técnicas de
-  falsificação, duplicação e triangulação é obrigatório.
-
-  remove
